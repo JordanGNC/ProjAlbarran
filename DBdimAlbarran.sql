@@ -27,7 +27,7 @@ IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo
 		ID_Cliente INT PRIMARY KEY,
 		Nombre_Cliente NVARCHAR(100) NOT NULL,
 		Fechanac_Cliente DATE NOT NULL,
-		Sexo_Cliente VARCHAR(100) NOT NULL
+		Sexo_Cliente CHAR(1) NOT NULL
 	);
 
 -- tabla de Dimensión de Empleado (DimEmpleado)
